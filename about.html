@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" manifest="kshatriya.appcache">
+<!-- This is the doctype declaration which has been selected as HTML 5 -->
+
+<head>
+	
+	<!--This is the header of the document-->
+	<title>About Us at Kshatriya</title>
+	<!-- Include SEO Metatags -->
+	<meta name = "keywords" content = "Kshatriya, Aaron Fryer, Prototype, Square Index Prototype"/>
+	<meta name = "description" content = "The Kshatriya prototype index page"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- Change Internet Explorer Navigation arrows IE9+ -->
+	<meta name="msapplication-navbutton-color" content="green">
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquerym.js"></script>
+
+	<!-- Dependences -->
+
+	<style>
+		ol{
+			list-style:none !important;
+		}
+		.pri_accent{
+			background-color: #333;
+		}
+		.sidr_button:hover{
+			background-color: #333;
+		}
+		.sec_accent{
+			color: #232323;
+		}
+		.nav_button{
+			color: #232323 !important;
+			font-size: 18px !important;
+			text-shadow: none !important;
+		}
+		.nav_button:hover{
+			color: #232323 !important;
+			text-shadow: none !important;
+		}
+		
+		.toc {
+			background-image: url("img/placeholder.jpg");
+			background-position: left;
+			margin-top: -6% !important;
+			padding-bottom: 30%;
+			background-repeat: no-repeat;
+			color: #fff !important;
+			background-size: 160%;
+			vertical-align: text-bottom;
+			box-shadow: 0px 2px 5px rgba(0,0,0,0.26);
+		}
+		.toc_text {
+			margin-top: -24.2% !important;
+			padding: 0 15px;
+			color: #fff;
+			font-size: 1.2em;
+			font-weight: normal;
+		}
+		header{
+			padding-left: 10%;
+			font-size: 4em;
+			padding-top: 3%;
+			height: 100px;
+			margin-left: -10%;
+			box-shadow: 0px 2px 5px rgba(0,0,0,0.26);
+			background-color: #333;
+			-webkit-transition: all 0.4s ease;
+			transition: all 0.4s ease;
+		}
+
+		header.sticky{
+			font-size: 2em;
+			padding-left: 10%;
+			padding-top: 0%;
+			height: auto;
+			padding-left: 9.5%;
+			background-color: none;
+			box-shadow: 0px 2px 5px rgba(0,0,0,0.26);
+		}
+		#search_sub{
+			margin-top: 0px;
+		}
+		#search_sub.sticky{
+			margin-top: 10px;
+		}
+		#search_sub.js{
+			display:none;
+		}
+		.search_span{
+			display: inline;
+		}
+		
+		@media only screen and (max-width: 520px) and (max-height: 720px){
+			header.sticky{
+				padding-left: 8%;
+			}
+		}
+		
+	</style>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico" />	
+	
+</head>
+
+<body>
+	
+	<div id = "wrapper" data-role="page">
+	
+		<div class = "container">
+			<!-- This is a container DIV box that contains the other div container boxes to keep everything on the page contained -->
+			<header>
+			<ul id="nav" class = "pri_accent">
+				<li>
+					<a class = "nav_button" href="#leftpanel">
+						<i class="fa fa-bars fa-lg"></i>
+					</a>
+				</li>
+                <li class="active nav_padding"><a href="index.html">Kshatriya</a></li>
+			</ul>
+		</div>
+		<div data-role="panel" id="leftpanel" data-display="overlay" data-position="left">
+			<!-- Table Of Contents -->
+			<ul>
+				<li class = "toc">&nbsp;</li>
+				<li class = "toc_text">Kshatriya</li>
+				<li class = "sidr_button"><a href="http://www.kshatriya.co.uk/index.html">Kshatriya</a></li>
+				<li class = "sidr_button"><a href="#">Clique</a></li>
+				<li class = "sidr_button"><a href="blog/index.php">NTD Project</a></li>
+			</ul>
+			<br />
+			<h2>Kshatriya</h2>
+			<ul>
+				<li class = "sidr_button"><a data-ajax="false" href="index.html">Kshatriya</a></li>
+				<li class = "sidr_button"><a data-ajax="false" href="about.html">About</a></li>
+				<li class = "sidr_button"><a data-ajax="false" href="contact.php">Contact Us</a></li>
+				<li class = "sidr_button"><a data-ajax="false" href="videos.html">Our Apps</a></li>
+			</ul>
+			<ul>
+				<li class = "sidr_button"><a href="#nav" data-rel="close">Back <i class="fa fa-arrow-right"></i></a></li>
+			</ul>
+		</div><!-- /panel -->
+		
+		<div id = "home-intro">
+			<div id = "home-intro-content">
+				<div id = "home-intro-welcome">
+				
+				</div>
+				<div id = "intro-image">
+					<img src="img/placeholder_me_lon.JPG" id = "home-intro-image" alt = "London England, Near Buckingham Palace" title = "London England, Near Buckingham Palace"/>
+					<h1>
+						<img class="banner_img" src="img/Kshatriya_Logo.svg">
+					<span class = "index"><span><span class = "grey">About Us:<span class='spacer'></span></span><span class ='spacing'><br/></span><span class='spacer'></span><span class = "title">At Kshatriya</span></span></span>
+					</h1>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="arrow-down" id ="him"></div>
+		</div>
+		
+		<div id = "Content">
+		
+			<div class="section group">
+			
+				<div class="col span_1_of_3 s1o3_padding_l">
+					<h2>Who Are Kshatriya?</h2>
+					<p>
+						<b>Kshatriya</b> is an alias for the creator of this website <b>Aaron Fryer</b>. 
+						It all started when Aaron had to create a brand name and a logo for himself or a company for his <b>DES400: Digital Creatvity Brand Exercise Assignment.</b> 
+						Kshatriya is a student in his first year of university studying <b>Web Design & Development</b> and creates HTML, CSS, PHP documents to improve his web development skills.
+					</p>
+					<p>
+						He is currently expanding onto the App development area, first by developing Windows Phone and Windows 8 applications and then moving onto different platforms when he is fully comfortable in C#. 
+						His current aims are to re-learn JavaScript and get a better understanding of it an improve is native development skills on the Windows Platform. 
+					</p>
+					<p>
+						Our current aim is to create and provide a social web service that is open to outside use and is extensible.
+					</p>
+				</div>
+				
+				<div class="col span_1_of_3 s1o3_padding_l_no">
+					
+					<h2>How it was Created</h2>
+					<p>
+						<b>Kshatriya</b> was created for a brand exercise, though the brand name and logo has been kept since the creation and completion of the brand exercise. The name <b>Kshatriya</b> came from an anime called <b>Mobile Suit Gundam: Unicorn</b> where the logo was based on the mobile suit of the same name. The name was chosen because it was unique and the only other notable reference to it was a film from the 1980's that didn't gain any fame.
+						This enabled me to use the name because the name was still fresh and nothing of too noticable was using it. The logo was based on the mobile suits head and flattened and simplified to express the design style of the creator <b>Aaron Fryer</b>.
+					</p>
+					<a id = "r2"/></a>
+				</div>
+				
+				<div class="col span_1_of_3 s1o3_padding_r">
+					<h2>The Tools We Use</h2>
+					<p>
+						To develop websites and apps we use a variety of software packages to develop and deploy our websites and applications. These tools for Websites are:
+					</p>
+					<ul>
+						<li>Apache</li>
+						<li>LAMP / WAMP Server Software</li>
+						<li>MySQL</li>
+						<li>Notepad ++</li>
+						<li>PHPMyAdmin</li>
+					</ul>
+					<p>For applications we use:</p>
+					<ul>
+						<li>C#</li>
+						<li>Hyper-V for app testing</li>
+						<li>Lumia for app deployment</li>
+						<li>Visual Studio</li>
+					</ul>
+					
+				</div>
+				
+			</div>
+			
+			<div class="section group dark">
+				<div class="arrow-down-white"></div>
+				<div class="col span_1_of_3">
+					<h2>Our Design Scheme</h2>
+			
+					<p>
+						The design scheme here at <b>Kshatriya</b> is as follows:</p>
+						<ul>
+							<li>The main colour for Kshatriya is green in the hex colour of: #336633</li>
+							<li>Main body text is of the hex colour of: #333 and uses the Open Sans font face with a weight of 300</li>
+							<li>Page headers are of the size of 3.5em and use the main colour of choice which is: #336633</li>
+							<li>Form text fields have a glow of the secondary colour of: #ff99cc</li>
+						</ul>
+					<p>
+						This design scheme is to ensure that this site follows the creators design style.
+					</p>
+			
+				</div>
+				
+				<div class="col span_1_of_3 s1o3_padding_l_no">
+					<h2>About Aaron Fryer</h2>
+					<p>My name is Aaron Fryer, I am 19 years old and I was born in Birmingham. I have previously done 2 years at college studying for a BTEC National Diploma in ICT Software Development.
+					In 2 years there I made a few friends and grew as a person and gained valuable skills. After College I did an apprenticeship which didn't go well though it gave me new experiences on living away from my family.
+					After the year on the apprenticeship that has led me to university.</p>
+					<a id = "r3"/></a>
+				</div>
+				
+				<div class="col span_1_of_3 s1o3_padding_r">
+					<div id = 'ownbrandme'>
+						<a href = "#AUTH"><img src="http://graph.facebook.com/twiggyrj/picture?type=large" alt = "Creator of Kshatriya Design Aaron Fryer" title = "Creator of Kshatriya Design Aaron Fryer"/></a>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="section group">
+			
+				<div class="col span_1_of_2 s1o3_padding_l">
+					<h2>How We Develop</h2>
+					<p>
+						We use the spiral methodology and develop websites incrementally. This allows us to continuously develop the pages of the website with new requirements.
+						Developing this website has taken many revisions and has been subject to many different design styles, we have now settled on a contemporary flat design style.
+					</p>
+				</div>
+				<div class="col span_1_of_2 s1o2_padding_r">
+					<h2>Mobile Friendly & Responsive Design</h2>
+					<p>
+						This website uses percentages, media queries and the <a href = "http://www.responsivegridsystem.com/">responsive design grid system</a> to create a website that responds to the screen size so that content is never lost.
+						This enables users from any device to get a quality experience.
+					</p>
+				</div>
+				
+			</div>
+		
+		</div>
+		
+		<div>
+			<br/>
+		</div>
+		
+	<footer>
+		<div class="section group footer_firtone">
+			<div class="col span_12_of_12 center_footer">
+				<a href = "#home-intro" id="top" class = "arrow_up_jq"><i class="fa fa-angle-double-up fa-lg"></i></a> 
+			</div>
+			<div class="col span_2_of_12">
+				<div class ="sitemap">
+
+					<nav><h3>Kshatriya</h3>
+						<ul class="footer_sitemap">
+							
+							<li><a href="index.html">Kshatriya</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="contact.php">Contact Us</a></li>
+						</ul>
+					</nav>
+					
+				</div>
+			</div>
+			
+			<div class="col span_2_of_12">
+				<div class ="sitemap">
+
+					<nav><h3>Blogs</h3>
+						<ul class="footer_sitemap">
+							
+							<li><a href="index.html">News</a></li>
+							<li><a href="about.html">Aaron's Personal Blog</a></li>
+						</ul>
+					</nav>
+					
+				</div>
+			</div>
+			
+			<div class="col span_2_of_12">
+				<div class ="sitemap">
+
+					<nav><h3>Labs</h3>
+						<ul class="footer_sitemap">
+							
+							<li><a href="index.html">Kshatriya</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="contact.php">Contact Us</a></li>
+						</ul>
+					</nav>
+				
+				</div>
+			</div>
+			<div class="col span_5_of_12">
+				
+				<h1>Social</h1>
+
+				<nav>
+				
+					<a href="https://www.facebook.com/kshatriyadev" class ="sc_bt"><i class="fa fa-facebook fa-lg"></i></a>
+					<a href="" class ="sc_bt"><i class="fa fa-twitter fa-lg"></i></a>
+					<a href="https://plus.google.com/114066318397277764361" rel="publisher" class ="sc_bt"><i class="fa fa-google-plus fa-lg"></i></a>
+					<a href="" class ="sc_bt"><i class="fa fa-linkedin fa-lg"></i></a>
+					<a href="" class ="sc_bt"><i class="fa fa-envelope fa-lg"></i></a>
+
+				</nav>
+			</div>
+
+		</div>
+		<div class="section group footer_tritone">
+			<div class="col span_2_of_3">
+				<p class = "parapadding">This is the Kshatriya Index Page, this is a prototype/work in progress. This is version 0.2, this was created by <b>Kshatriya</b> a.k.a: Aaron Fryer. <br>The music below is set to play when you click it, instead of autoplay. We know how annoying it can be to open a webpage and music suddenly starts playing.</p>
+				 
+			</div>
+			<div class="col span_1_of_3">
+				<br>
+				<audio controls loop>
+				   <source src="audio/01.mp3" type="audio/mpeg">
+				   Your browser does not support the audio tag.
+				</audio>
+			</div>
+		</div>
+	</footer>
+	
+	</div>
+	
+	<!-- Include CSS -->
+	<!-- Main CSS -->
+	<link rel="stylesheet" type="text/css" href="css/flat.css"/>
+	
+	<!-- Include Javascript -->
+	<!-- Include jQuery -->
+	<script type="text/javascript" src="js/kshatriya.js"></script>
+	<script type="text/javascript" src="js/kshatriya_scroll.js"></script>
+
+	<script>
+		$('#top').scrollTo();
+	</script>
+	<script>	
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 1){  
+				$('header').addClass("sticky");
+			}
+			else{
+				$('header').removeClass("sticky");
+			}
+			if ($(this).scrollTop() > 1){  
+				$('#search_sub').addClass("sticky");
+			}
+			else{
+				$('#search_sub').removeClass("sticky");
+			}
+		});
+	</script>
+	
+
+</body>
+
+</html>

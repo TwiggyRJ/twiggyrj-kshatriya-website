@@ -1,0 +1,16 @@
+CACHE MANIFEST
+# 12-05-2014:v1
+
+# Explicitly cached entries
+index.html
+css/flat.css
+js/kshatriya_scroll.js
+js/jquery.js
+js/kshatriya.js
+
+
+# Additional resources to cache
+CACHE:
+img/placeholder.jpg
+img/Kshatriya_Logo.svg
+audio/01.mpg
