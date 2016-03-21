@@ -73,17 +73,26 @@ body{
 }
 #home-intro-message{
 	background-color:#fff;
+	padding-top: 1%;
 }
 #home-intro-message h1{
-	font-size: 8em;
-	text-align:center;
+	font-size: 3em;
+	font-weight: bold !important;
+	text-align: center;
+	text-transform: uppercase;
 }
 #home-intro-message p{
 	font-size: 3em;
 	text-align:center;
-	color:#9a9a9a ;
-	padding-left: 3%;
-	padding-right: 3%;
+	color:#333;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+.home-intro-message-special{
+	font-size: 2em !important;
+	color:#9a9a9a !important;
+	padding-left: 10% !important;
+	padding-right: 10% !important;
 }
 #home-intro-welcome {
 	position:relative;
@@ -142,36 +151,42 @@ body{
 }
 #home-main-content {
 	background-color: #333;
-	padding-left: 3%;
-	padding-right: 3%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 #home-main-content h1 {
-	font-size: 6em;
+	font-size: 3em;
+	font-weight: bold !important;
 	text-align:center;
+	text-transform: uppercase;
 	color: #FFFFFF;
 }
 #home-main-content p {
-	font-size: 3em;
+	font-size: 2em;
 	text-align:center;
 	color:#acacac;
+	padding-left: 20%;
+	padding-right: 20%;
+	white-space: pre-wrap;
 }
 #home-intro-about{
 	background-color:#fff;
-	padding-left: 3%;
-	padding-right: 3%;
+	padding: 1% 20% 0% 20%;
 }
 #home-intro-about h1{
-	font-size: 8em;
+	font-size: 3em;
+	font-weight: bold !important;
+	text-transform: uppercase;
 	text-align:center;
-	font-weight: 300;
 }
 #home-intro-about p{
-	font-size: 3em;
+	font-size: 2em;
 	text-align:center;
-	color:#9a9a9a ;
+	color:#333;
+	white-space: pre-wrap;
 }
 #home-intro-about ol{
-	font-size: 3em;
+	font-size: 2em;
 	text-align:center;
 	color:#9a9a9a ;
 }
@@ -1266,7 +1281,14 @@ a.arrow_up_jq a:link, a.arrow_up_jq a:visited{ color: #FFFFFF;text-decoration:no
 
 /*Links*/
 a:link { color: #000099;text-decoration:none; } /* unvisited links */
-a:hover{ text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #333;}
+a:hover{
+	text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #333;
+	-moz-transition: all 300ms ease-in-out 0s;
+    -ms-transition: all 300ms ease-in-out 0s;
+    -o-transition: all 300ms ease-in-out 0s;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
 a:visited { color: #FF0000;text-decoration:none; } /* visited links */
 
 /*Table*/
