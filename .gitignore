@@ -1,4 +1,6 @@
 /audio
 /video
+/old-css
 *.mp3
 *.mp4
+*.psd

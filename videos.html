@@ -8,87 +8,12 @@
 	<!-- Include SEO Metatags -->
 	<meta name = "keywords" content = "Kshatriya, Aaron Fryer, Prototype, Square Index Prototype"/>
 	<meta name = "description" content = "The Kshatriya prototype index page"/>
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
 	<!-- Change Internet Explorer Navigation arrows IE9+ -->
 	<meta name="msapplication-navbutton-color" content="green">
 	
-
-	<!-- Dependences -->
-
-	<style>
-		ol{
-			list-style:none !important;
-		}
-		.pri_accent{
-			background-color: #333;
-		}
-		.sidr_button:hover{
-			background-color: #333;
-		}
-		.sec_accent{
-			color: #232323;
-		}
-		.nav_button{
-			color: #232323 !important;
-			font-size: 18px !important;
-			text-shadow: none !important;
-		}
-		.nav_button:hover{
-			color: #232323 !important;
-			text-shadow: none !important;
-		}
-		.toc {
-			background-image: url("img/placeholder.jpg");
-			background-position: left;
-			margin-top: -6% !important;
-			padding-bottom: 30%;
-			background-repeat: no-repeat;
-			color: #fff !important;
-			background-size: 160%;
-			vertical-align: text-bottom;
-			box-shadow: 0px 2px 5px rgba(0,0,0,0.26);
-		}
-		.toc_text {
-			margin-top: -24.2% !important;
-			padding: 0 15px;
-			color: #fff;
-			font-size: 1.2em;
-			font-weight: normal;
-		}
-		header{
-			padding-left: 10%;
-			font-size: 4em;
-			padding-top: 3%;
-			height: 100px;
-			margin-left: -10%;
-			box-shadow: 0px 2px 5px rgba(0,0,0,0.26);
-			background-color: #333;
-			-webkit-transition: all 0.4s ease;
-			transition: all 0.4s ease;
-		}
-
-		header.sticky{
-			font-size: 2em;
-			padding-left: 9.5%;
-			padding-top: 0%;
-			height: auto;
-			background-color: none;
-			box-shadow: 0px 2px 5px rgba(0,0,0,0.26);
-		}
-		#search_sub{
-			margin-top: 0px;
-		}
-		#search_sub.sticky{
-			margin-top: 10px;
-		}
-		#search_sub.js{
-			display:none;
-		}
-		.search_span{
-			display: inline;
-		}
-
-	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -97,27 +22,25 @@
 </head>
 
 <body>
-	
 	<div id = "wrapper" data-role="page">
-	
-		<div class = "container">
-			<!-- This is a container DIV box that contains the other div container boxes to keep everything on the page contained -->
-			<header>
-			<ul id="nav" class = "pri_accent">
-				<li>
-					<a class = "nav_button" href="#leftpanel">
-						<i class="fa fa-bars fa-lg"></i>
-					</a>
-				</li>
-                <li class="active nav_padding"><a data-ajax="false" href="index.html">Kshatriya</a></li>
-			</ul>
+		<div class = "top-nav">
+			<nav>
+				<ul class="nav">
+					<li>
+						<a class = "nav_button" href="#leftpanel">
+							<i class="fa fa-bars"></i>
+						</a>
+					</li>
+			        <li class="active nav_padding"><a href="index.html">Kshatriya</a></li>
+				</ul>
+			</nav>	
 		</div>
-		<div data-role="panel" id="leftpanel" data-display="overlay" data-position="left">
+		<div data-role="panel" data-position-fixed="true" id="leftpanel" data-display="overlay" data-position="left">
 			<!-- Table Of Contents -->
 			<ul>
 				<li class = "toc">&nbsp;</li>
 				<li class = "toc_text">Kshatriya</li>
-				<li class = "sidr_button"><a data-ajax="false" href="http://www.kshatriya.co.uk/index.html">Kshatriya</a></li>
+				<li class = "sidr_button"><a data-ajax="false" href="https://www.kshatriya.co.uk/index.html">Kshatriya</a></li>
 				<li class = "sidr_button"><a data-ajax="false" href="blog/">Conversations</a></li>
 			</ul>
 			<br />
@@ -125,178 +48,120 @@
 			<ul>
 				<li class = "sidr_button"><a data-ajax="false" href="index.html">Kshatriya</a></li>
 				<li class = "sidr_button"><a data-ajax="false" href="about.html">About</a></li>
-				<li class = "sidr_button"><a data-ajax="false" href="contact.php">Contact Us</a></li>
+				<li class = "sidr_button"><a data-ajax="false" href="contact.html">Contact Us</a></li>
 				<li class = "sidr_button"><a data-ajax="false" href="videos.html">Our Apps</a></li>
 			</ul>
 			<ul>
 				<li class = "sidr_button"><a href="#nav" data-rel="close">Back <i class="fa fa-arrow-right"></i></a></li>
 			</ul>
 		</div><!-- /panel -->
-	
-	<div id = "home-intro">
-		<div id = "home-intro-content">
-			<div id = "home-intro-welcome">
-			
+
+		<header class = "header">
+			<div>
+				<div class = "inner-header">
+					<img src="http://www.kshatriya.co.uk/img/placeholder.jpg" class = "header-image" alt = "Reluctant Beast, &copy;Kouzou Omori" title = "Reluctant Beast, &copy;Kouzou Omori Of Mobile Suit Gundam UC -Bande Dessinee"/>
+					<h1>
+						<img class="header_logo" src="img/Kshatriya_Logo.svg">
+						<span class = "index">
+							<span>
+								<span class = "grey">
+									<span class = "title">Our Apps at:</span>
+									<span class='spacer'></span>
+								</span>
+								<span class ='spacing'><br/></span><span class='spacer'></span>
+								<span class = "headline">At Kshatriya</span>
+							</span>
+						</span>
+					</h1>
+				</div>
+				<div class = "header-buttons">
+					<a class="button button-group button-group-left" href="https://github.com/twiggyrj" role="button">GitHub</a><a class="button button-group button-group-right" href="https://twitter.com/twiggyrj" role="button">Twitter</a>
+				</div>
 			</div>
-			<div id = "intro-image">
-				<img src="img/placeholder.jpg" id = "home-intro-image" alt = "Reluctant Beast, &copy;Kouzou Omori" title = "Reluctant Beast, &copy;Kouzou Omori Of Mobile Suit Gundam UC -Bande Dessinee"/>
-				<h1>
-					<img class="banner_img" src="img/Kshatriya_Logo.svg">
-				<span class = "index"><span><span class = "grey">Our Apps at:<span class='spacer'></span></span>
-				<span class ='spacing'><br/></span><span class='spacer'></span>
-				<span class = "title">Kshatriya</span></span></span>
-				</h1>
-			</div>
-		</div>
-		<div class="line"></div>
-		<div class="arrow-down" id ="him"></div>
-	</div>
-	
-	<div id = "home-intro-message">
-	
-		<h1>Internet Archive Windows Apps</h1>
-		<p>I hope You like Our App</p>
-		<p>
-			<video id = "advert_video" controls>
-			   <source src="videos/advert.mp4" type="video/mp4">
-			 Your browser does not support the video tag.
-			</video> 
-		</p>
-		<p>
-			<picture class= "advert_image">
-			   <source src="img/advert2.jpg">
-				<img class = "advert_image" src="img/advert2.jpg">
-			</picture>
-		</p>
-		<p>
-			<picture class = "advert_image">
-			   <source src="img/advert.jpg">
-				<img class = "advert_image" src="img/advert.jpg">
-			</picture>
-		</p>
+		</header>
 		
-	</div>
-	
-	<div id = "home-main-content">
-		<h1>Fable Time Project</h1>
-		<div id="fableapp"></div>
-	</div>
-	
-	<br>
-	
-	<footer>
-		<div class="section group footer_firtone">
-			<div class="col span_12_of_12 center_footer">
-				<a href = "#home-intro" id="top" class = "arrow_up_jq"><i class="fa fa-angle-double-up fa-lg"></i></a> 
-			</div>
-			<div class="col span_2_of_12">
-				<div class ="sitemap">
+		<section>
+		
+			<h1>Internet Archive Windows Apps</h1>
+			<p>I hope You like Our App</p>
+			<p>
+				<video id = "advert_video" controls>
+				   <source src="videos/advert.mp4" type="video/mp4">
+				 Your browser does not support the video tag.
+				</video> 
+			</p>
+			<p>
+				<picture class= "advert_image">
+				   <source src="img/advert2.jpg">
+					<img class = "advert_image" src="img/advert2.jpg">
+				</picture>
+			</p>
+			<p>
+				<picture class = "advert_image">
+				   <source src="img/advert.jpg">
+					<img class = "advert_image" src="img/advert.jpg">
+				</picture>
+			</p>
 
-					<nav><h3>Kshatriya</h3>
-						<ul class="footer_sitemap">
-							
-							<li><a href="index.html">Kshatriya</a></li>
-							<li><a href="about.html">About Us</a></li>
-							<li><a href="contact.php">Contact Us</a></li>
-						</ul>
-					</nav>
-					
-				</div>
+			<div class = "jumbotron-alt">
+				<h1>Fable Time Project</h1>
+				<div id="fableapp"></div>
 			</div>
+
+
+		</section>
+
+		<footer>
+
+			<div class="section group top-footer">
 			
-			<div class="col span_2_of_12">
-				<div class ="sitemap">
-
-					<nav><h3>Blogs</h3>
-						<ul class="footer_sitemap">
+				<h2>Kshatriya</h2>
+				<section class="col span_4_of_12">
+					<h3>Sitemap</h3>
+					<ul>
+						<li><a href="index.html">Kshatriya</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="blog/">Conversations</a></li>
+						<li><a href="#">LEV Framework</a></li>
+					</ul>
+				</section>
+				<section class="col span_6_of_12 footer">
+					<h3>About</h3>
+					<p>This is Kshatriya, a website to show the works of Aaron Fryer an aspiring Web Developer and Astronaut.</p>
+				</section>
 							
-							<li><a href="index.html">News</a></li>
-							<li><a href="about.html">Aaron's Personal Blog</a></li>
-						</ul>
-					</nav>
-					
-				</div>
 			</div>
-			
-			<div class="col span_2_of_12">
-				<div class ="sitemap">
-
-					<nav><h3>Labs</h3>
-						<ul class="footer_sitemap">
-							
-							<li><a href="index.html">Kshatriya</a></li>
-							<li><a href="about.html">About Us</a></li>
-							<li><a href="contact.php">Contact Us</a></li>
-						</ul>
-					</nav>
-				
-				</div>
+			<div class="section group bottom-footer">
+				<section class="col span_11_of_12">
+					<span class="social-buttons">
+						<a class="button button-footer-social" href="mailto:aaronfryer@live.co.uk" role="button"><i class="fa fa-envelope fa-lg"></i></a>
+						<a class="button button-footer-social" href="https://github.com/twiggyrj" role="button"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+						<a class="button button-footer-social" href="https://www.facebook.com/kshatriyadev" role="button"><i class="fa fa-facebook fa-lg"></i></a>
+						<a class="button button-footer-social" href="https://plus.google.com/114066318397277764361" role="button"><i class="fa fa-google-plus fa-lg"></i></a>
+						<a class="button button-footer-social" href="https://twitter.com/twiggyrj" role="button"><i class="fa fa-twitter fa-lg"></i></a>
+					</span>
+				</section>
 			</div>
-			<div class="col span_5_of_12">
-				
-				<h1>Social</h1>
-
-				<nav>
-				
-					<a href="https://www.facebook.com/kshatriyadev" class ="sc_bt"><i class="fa fa-facebook fa-lg"></i></a>
-					<a href="https://twitter.com/twiggyrj" class ="sc_bt"><i class="fa fa-twitter fa-lg"></i></a>
-					<a href="https://plus.google.com/114066318397277764361" rel="publisher" class ="sc_bt"><i class="fa fa-google-plus fa-lg"></i></a>
-					<a href="https://github.com/twiggyrj" class ="sc_bt"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-					<a href="mailto:aaronfryer@live.co.uk" class ="sc_bt"><i class="fa fa-envelope fa-lg"></i></a>
-
-				</nav>
+			<div class="section group music-footer">
+				<section class="col span_11_of_12">
+					<audio controls loop>
+						<source src="audio/02.mp3" type="audio/mpeg">
+						Your browser does not support the audio tag.
+					</audio>
+				</section>
 			</div>
 
-		</div>
-		<div class="section group footer_tritone">
-			<div class="col span_2_of_3">
-				<p class = "parapadding">This is the Kshatriya Index Page, this is a prototype/work in progress. This is version 0.2, this was created by <b>Kshatriya</b> a.k.a: Aaron Fryer. <br>The music below is set to play when you click it, instead of autoplay. We know how annoying it can be to open a webpage and music suddenly starts playing.</p>
-				 
-			</div>
-			<div class="col span_1_of_3">
-				<br>
-				<audio controls loop>
-				   <source src="audio/01.mp3" type="audio/mpeg">
-				   Your browser does not support the audio tag.
-				</audio>
-			</div>
-		</div>
-	</footer>
+		</footer>
+	
+	</div>
 	
 	</div>
 	
 	<!-- Include CSS -->
 	<!-- Main CSS -->
-	<link rel="stylesheet" type="text/css" href="css/flat.css"/>
-	
-	<!-- Include Javascript -->
-	<!-- Include jQuery -->
-	<script src="js/jquery.js"></script>
-	<script src="js/jquerym.js"></script>
-	<script src="js/edge.6.0.0.min.js"></script>
-	<script src="videos/anim/AE2_edge.js"></script>
-	<script type="text/javascript" src="js/kshatriya.js"></script>
-	<script type="text/javascript" src="js/kshatriya_scroll.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/lev.css"/>
 
-	<script>
-		$('#top').scrollTo();
-	</script>
 	<script>	
-		$(window).scroll(function() {
-			if ($(this).scrollTop() > 1){  
-				$('header').addClass("sticky");
-			}
-			else{
-				$('header').removeClass("sticky");
-			}
-			if ($(this).scrollTop() > 1){  
-				$('#search_sub').addClass("sticky");
-			}
-			else{
-				$('#search_sub').removeClass("sticky");
-			}
-		});
-		
 		var url = "videos/anim/AE2.html";
 		var target = "#fableapp";
 		
@@ -316,7 +181,8 @@
 				alert( "Request failed: " + textStatus );
 			});	
 	</script>
-	
+	<script src="js/edge.6.0.0.min.js"></script>
+	<script src="videos/anim/AE2_edge.js"></script>
 
 </body>
 
